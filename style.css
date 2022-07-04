@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  align-items: center;
+  display: flex;
+  font-family: "Century Gothic";
+  justify-content: center;
+  min-height: 100vh;
+  perspective: 1000px;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.card {
+  border-radius: 40px;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 40px rgba(0, 0, 0, 0.2);
+  min-height: 80vh;
+  padding: 2rem 4rem;
+  transform-style: preserve-3d;
+  width: 36rem;
+}
+
+.sneaker {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 36vh;
+}
+
+.sneaker img {
+  transition: 0.8s ease-out;
+  width: 24rem;
+  z-index: 2;
+}
+
+.circle {
+  background: linear-gradient(
+    to right,
+    rgba(0, 182, 158, 0.8),
+    rgba(182, 206, 0, 0.8)
+  );
+  border-radius: 50%;
+  height: 16rem;
+  position: absolute;
+  width: 16rem;
+  z-index: 1;
+}
+
+.info h1 {
+  font-size: 2.8rem;
+  transition: 0.8s ease-out;
+}
+
+.info h4 {
+  color: #585858;
+  font-size: 1.8rem;
+  font-weight: lighter;
+  padding: 2rem 0rem;
+  transition: 0.8s ease-out;
+}
+
+.sizes {
+  display: flex;
+  justify-content: space-between;
+  transition: 0.8s ease-out;
+}
+
+.sizes button {
+  background: none;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  color: #585858;
+  cursor: pointer;
+  font-weight: bold;
+  outline: none;
+  padding: 0.8rem 2rem;
+}
+
+button.active {
+  background: #585858;
+  color: whitesmoke;
+}
+
+.purchase {
+  margin-top: 4rem;
+}
+
+.purchase button {
+  background: #a3ba00;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+  color: whitesmoke;
+  cursor: pointer;
+  font-weight: bolder;
+  outline: none;
+  padding: 1.2rem 0rem;
+  transition: 0.8s ease-out;
+  width: 100%;
+}
